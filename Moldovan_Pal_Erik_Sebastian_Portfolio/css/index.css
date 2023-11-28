@@ -1,0 +1,678 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "optien";
+    src: url("../fonts/Optien.ttf");
+}
+
+@font-face {
+    font-family: "notosans";
+    src: url("../fonts/NotoSans-Regular.ttf");
+}
+
+@font-face {
+    font-family: "peckham";
+    src: url("../fonts/PeckhamPress-Trial.otf");
+}
+
+@font-face {
+    font-family: "manolete";
+    src: url("../fonts/MANOLETE.ttf");
+}
+
+@font-face {
+    font-family: "aurora";
+    src: url("../fonts/AURORA-PRO.otf");
+}
+
+@font-face {
+    font-family: "quicksand";
+    src: url("../fonts/Quicksand-VariableFont_wght.ttf");
+}
+
+:root {
+    --texto: black;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: rgb(214, 213, 193);
+}
+
+header {
+    width: 100%;
+    height: 70px;
+}
+
+nav {
+    width: 100%;
+    height: 70px;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "notosans";
+    z-index: 3;
+    backdrop-filter: blur(10px);
+    border-bottom: 1px black solid;
+}
+
+.menuheader {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.menuheader>a {
+    width: 200px;
+    height: 100%;
+    color: black;
+    font-size: larger;
+    text-decoration: none;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.4s;
+    border: rgb(23, 23, 23);
+    filter: blur(0px);
+}
+
+.menuheader>a:hover {
+    transform: translateY(-4px);
+    color: #17888a;
+    transition: 0.5s;
+}
+
+main {
+    margin-bottom: 50px;
+}
+
+.portcont {
+    margin: 0 auto;
+    background-color: #c9c2a9;
+    background-size: 100%;
+    object-fit: cover;
+    color: var(--texto);
+    width: 100%;
+    height: 93vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0 50px #a7a7a7;
+    margin-bottom: 150px;
+}
+
+.sol {
+    width: 30vw;
+    height: 30vw;
+    background-color: #fa704a;
+    box-shadow: 0 0 100px #fa704a;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+.montania1 {
+    width: 35vw;
+    height: 45vw;
+    background-color: #a19573;
+    position: absolute;
+    bottom: -55%;
+    left: 20%;
+    border-radius: 50px;
+    transform: rotate(50deg);
+    border: 5px #cfc096 solid;
+}
+
+.montania2 {
+    width: 35vw;
+    height: 45vw;
+    background-color: #a19573;
+    position: absolute;
+    bottom: -70%;
+    left: 40%;
+    border-radius: 50px;
+    transform: rotate(45deg);
+    border: 5px #cfc096 solid;
+}
+
+.introd {
+    width: fit-content;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.nombrecomp {
+    display: flex;
+    font-size: 1.8em;
+    font-family: "peckham";
+    color: var(--texto);
+    min-width: 1.8em;
+}
+
+.nombre {
+    margin-right: 30px;
+}
+
+.color {
+    color: #56a9ab;
+}
+
+.puesto {
+    font-size: 2em;
+    font-family: "notosans";
+}
+
+.horizontal {
+    width: 95%;
+    height: 3px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    background-color: #555555;
+    border-radius: 3px;
+}
+
+.sobremi {
+    width: 100%;
+    color: var(--texto);
+    font-size: 1.2vw;
+    font-family: "quicksand";
+    text-align: justify;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.bloque {
+    width: 50%;
+    display: grid;
+}
+
+.vertical {
+    width: 3px;
+    background-color: #555555;
+    border-radius: 3px;
+}
+
+.codimg {
+    width: 40%;
+}
+
+.saludo {
+    font-size: 2em;
+    font-family: "optien";
+}
+
+.html {
+    color: black;
+    background-color: #f16524;
+    border-radius: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.css {
+    color: black;
+    background-color: #29a9df;
+    border-radius: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.js {
+    color: black;
+    background-color: #f0dc4e;
+    border-radius: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.conocimientos {
+    margin-top: 150px;
+    margin-left: 6%;
+    margin-bottom: 10px;
+    color: var(--texto);
+    font-size: 3vw;
+    font-family: "optien";
+}
+
+.conocimientos>img {
+    background-color: white;
+}
+
+.contlogos {
+    width: 100%;
+    margin: 0 auto;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.logos {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 80px;
+    row-gap: 80px;
+    place-items: center;
+    background-color: #b1a988;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    border-radius: 10px;
+}
+
+.logoydiv {
+    width: 100%;
+    display: grid;
+    place-items: center;
+}
+
+.logoydiv>img {
+    position: relative;
+    background-color: #b1a988;
+}
+
+.logoydiv>div {
+    position: absolute;
+}
+
+.forma {
+    width: 0%;
+    height: 0%;
+    font-size: 6em;
+    display: flex;
+    justify-content: space-between;
+    transition: width 0.5s, height 0.5s;
+    overflow: hidden;
+    color: #242424;
+    font-family: "notosans";
+}
+
+.logoydiv:hover .forma {
+    width: 20%;
+    height: 120px;
+    font-size: 6em;
+    transition: 0.5s;
+}
+
+.proytitulo {
+    margin-top: 150px;
+    margin-left: 6%;
+    margin-bottom: 10px;
+    color: var(--texto);
+    font-size: 3vw;
+    font-family: "optien";
+}
+
+.proycont {
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 250px;
+}
+
+.proyectos {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 120px;
+    row-gap: 250px;
+}
+
+#proyecto {
+    height: 98%;
+    display: flex;
+    flex-direction: column-reverse;
+    position: relative;
+    border-radius: 10px;
+}
+
+.imagenes {
+    overflow: hidden;
+    position: relative;
+    border-radius: 10px;
+    z-index: 2;
+}
+
+.img1 {
+    width: 100%;
+    height: 100%;
+}
+
+.img2,
+.img3,
+.img4 {
+    width: 100%;
+    position: absolute;
+    bottom: 106%;
+    transition: 0.2s;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#proyecto:hover .img2 {
+    bottom: 0;
+    transition: 0.5s;
+    transition-delay: 1s;
+}
+
+#proyecto:hover .img3 {
+    bottom: 0;
+    transition: 0.5s;
+    transition-delay: 3s;
+}
+
+#proyecto:hover .img4 {
+    bottom: 0;
+    transition: 0.5s;
+    transition-delay: 5s;
+}
+
+.desc {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    z-index: 0;
+    transition: 0.2s;
+    background-color: #5c5c5c;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    align-items: end;
+    font-family: "quicksand";
+    font-size: 1vw;
+}
+
+#proyecto:hover .desc {
+    bottom: -50%;
+    transition: 0.2s;
+}
+
+#proyecto:hover .desc {
+    color: white;
+}
+
+.division {
+    width: 80%;
+    height: 3px;
+    margin-top: 150px;
+    margin: 0 auto;
+    background-color: #fa704a;
+    border: #fa704a;
+    border-radius: 3px;
+    margin-bottom: 10px;
+}
+
+footer {
+    width: 100%;
+    background-color: #b1a988;
+    border-top: 1px solid black;
+}
+
+.imagenesfooter {
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.imagenesfooter>a>img {
+    width: 50px;
+    height: 50px;
+    margin: 50px;
+}
+
+@media (max-width: 1024px) {
+    .portcont {
+        height: 90vh;
+    }
+
+    .nombrecomp {
+        font-size: 2vw;
+    }
+
+    .montania1 {
+        bottom: -75%;
+        left: 10%;
+        border-radius: 30px;
+        width: 60vw;
+        height: 60vw;
+    }
+
+    .montania2 {
+        bottom: -83%;
+        left: 27%;
+        border-radius: 30px;
+        width: 60vw;
+        height: 60vw;
+    }
+
+    .logos {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .logoydiv:hover .forma {
+        width: 30%;
+    }
+
+    .proyectos {
+        row-gap: 150px;
+        column-gap: 50px;
+    }
+
+    .desc {
+        font-size: 0.9vw;
+    }
+}
+
+@media (max-width: 933px) {
+    nav {
+        height: 15%;
+        font-size: 2vw;
+    }
+
+    .nombrecomp {
+        font-size: 1em;
+    }
+
+    .logos {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .logoydiv>img {
+        width: 40%;
+
+    }
+
+    .logoydiv:hover .forma {
+        width: 30%;
+    }
+
+    .proyectos {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .proyecto {
+        position: relative;
+    }
+
+    .desc {
+        position: absolute;
+        font-size: 2vw;
+        bottom: -50%;
+        color: white;
+    }
+
+    .img2,
+    .img3,
+    .img4 {
+        display: none;
+    }
+}
+
+@media (max-width: 426px) {
+    header {
+        height: 5%;
+    }
+
+    nav {
+        height: 5%;
+        font-size: 2vw;
+    }
+
+    .menuheader>a:hover {
+        color: #17888a;
+        transition: 0.5s;
+    }
+
+    .portcont {
+        height: 300px;
+        margin-bottom: 0;
+    }
+
+    .sol {
+        width: 150px;
+        height: 150px;
+    }
+
+    .montania1 {
+        bottom: -65%;
+        left: 9%;
+        border-radius: 30px;
+        width: 60vw;
+        height: 60vw;
+    }
+
+    .montania2 {
+        bottom: -70%;
+        left: 30%;
+        border-radius: 30px;
+        width: 60vw;
+        height: 60vw;
+    }
+
+    .introd {
+        margin: 0 auto;
+    }
+
+    .nombrecomp {
+        font-size: 3vw;
+        display: block;
+    }
+
+    .puesto {
+        font-size: 4vw;
+    }
+
+    .horizontal {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .sobremi {
+        position: relative;
+        height: 170px;
+    }
+
+    .bloque {
+        width: 80%;
+        position: absolute;
+    }
+
+    .saludo {
+        font-size: 5vw;
+        margin-bottom: 10px;
+    }
+
+    .resto {
+        font-size: 2vw;
+    }
+
+    .vertical {
+        visibility: hidden;
+    }
+
+    .codimg {
+        visibility: hidden;
+    }
+
+    .conocimientos {
+        margin-top: 50px;
+        margin-bottom: 0;
+        font-size: 5vw;
+    }
+
+    .logos {
+        grid-template-columns: repeat(4, 1fr);
+        column-gap: 0;
+        row-gap: 0px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .forma {
+        display: hidden;
+    }
+
+    .logoydiv {
+        height: 80px;
+        margin: 10px;
+    }
+
+    .logoydiv>img {
+        width: 80%;
+    }
+
+    .logoydiv:hover .forma {
+        display: hidden;
+        width: 0%;
+    }
+
+    .proytitulo {
+        margin-top: 0;
+        font-size: 5vw;
+        margin-top: 10px;
+        margin-bottom: 50px;
+    }
+
+    .proyectos {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .proyecto {
+        position: relative;
+    }
+
+    .desc {
+        position: absolute;
+        font-size: 2vw;
+        bottom: -50%;
+        color: white;
+    }
+
+    .img2,
+    .img3,
+    .img4 {
+        display: none;
+    }
+
+    .imagenesfooter>a>img {
+        width: 30px;
+        height: 30px;
+        margin: 20px;
+    }
+}
